@@ -119,7 +119,7 @@ export default function Home() {
       if (lastKey) loadNews();
     }
   };
-
+ 
   return (
     <div
       ref={containerRef}
