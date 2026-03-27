@@ -121,23 +121,26 @@ export default function Home() {
   };
  
   return (
-    <div
-      ref={containerRef}
+  <div
+  ref={containerRef}
   onScroll={handleScroll}
   style={{
     height: "100vh",
     overflowY: "scroll",
     scrollSnapType: "y mandatory",
     scrollBehavior: "smooth",
+    padding: "16px",
+    paddingBottom: "80px", // extra bottom space
+    boxSizing: "border-box", // ensures padding doesn't overflow
   }}
-    >
-      {news.map((item, index) =>
-        item.category !== "ad" ? (
-          <NewsCard key={index} item={item} />
-        ) : (
-          <FactCard key={index} item={item} />
-        )
-      )}
-    </div>
+>
+  {news.map((item, index) =>
+    item.category !== "ad" ? (
+      <NewsCard key={index} item={item} />
+    ) : (
+      <FactCard key={index} item={item} />
+    )
+  )}
+</div>
   );
 }
