@@ -130,7 +130,7 @@ export default function Home() {
     scrollSnapType: "y mandatory",
     scrollBehavior: "smooth",
    
-    paddingBottom: "120px", // extra bottom space
+    paddingBottom: "100px", // extra bottom space
     boxSizing: "border-box", // ensures padding doesn't overflow
   }}
 >
