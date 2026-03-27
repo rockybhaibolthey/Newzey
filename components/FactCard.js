@@ -30,6 +30,7 @@ export default function FactCard({ item }) {
           background: "white",
           padding: 20,
           borderTopLeftRadius: 20,
+          paddingBottom: "100px",
           borderTopRightRadius: 20,
         }}
       >
