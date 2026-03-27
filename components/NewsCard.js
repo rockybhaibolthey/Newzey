@@ -83,7 +83,7 @@ export default function NewsCard({ item }) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "center",paddingBottom: "120px",
         scrollSnapAlign: "start",
       }}
     >
