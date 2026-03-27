@@ -34,8 +34,12 @@ export default function FactCard({ item }) {
           borderTopRightRadius: 20,
         }}
       >
-        <h3>{item.category}</h3>
-        <p>{item.description}</p>
+       <h3 style={{ color: "black", textTransform: "uppercase" }}>
+  {item.category}
+</h3>
+       <p style={{ color: "black" }}>
+  {item.description}
+</p>
 
         <button
           onClick={openLink}
