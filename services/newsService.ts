@@ -39,7 +39,7 @@ export async function fetchNews(
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        lastSeenTime,
+        // lastSeenTime,
         limit: 10,
         lastKey,
       }),
